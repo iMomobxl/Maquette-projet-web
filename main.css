@@ -5,6 +5,7 @@ seriffont : Haettenschweiler
 sansfont : Dubai
 */
 
+/* Importation des fonts (local) */
 @font-face {
     font-family: "Haettenschweilerr";
     src: url('lib/fonts/Haettenschweilerttf');
@@ -15,7 +16,7 @@ sansfont : Dubai
 @font-face {
     font-family: "Dubai-Bold";
     src: url('lib/fonts/Dubai-Bold.ttf');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -23,7 +24,7 @@ sansfont : Dubai
 @font-face {
     font-family: "Dubai-Light";
     src: url('lib/fonts/Dubai-Light.ttf');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 }
 
@@ -72,4 +73,18 @@ sansfont : Dubai
 
 .dubai-regular-font {
     font-family: var(--sans-font-4);
+}
+
+#logo-menu {
+    max-width: auto;
+}
+
+#image-menu {
+    max-width:120px;
+    min-height:30px;
+}
+
+/* retire la border du burger menu de bootstrap */
+.navbar-toggler {
+    border: none;
 }
