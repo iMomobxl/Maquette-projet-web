@@ -1,0 +1,75 @@
+/*
+Paramétre fixé:
+color : cyan
+seriffont : Haettenschweiler
+sansfont : Dubai
+*/
+
+@font-face {
+    font-family: "Haettenschweilerr";
+    src: url('lib/fonts/Haettenschweilerttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dubai-Bold";
+    src: url('lib/fonts/Dubai-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Dubai-Light";
+    src: url('lib/fonts/Dubai-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dubai-Medium";
+    src: url('lib/fonts/Dubai-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dubai-Regular";
+    src: url('lib/fonts/Dubai-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Déclaration variable global */
+:root {
+    --color: cyan;
+    --serif-font: "Haettenschweiler";
+    --sans-font-1: "Dubai-Bold";
+    --sans-font-2: "Dubai-Light";
+    --sans-font-3: "Dubai-Medium";
+    --sans-font-4: "Dubai-Regular";
+}
+
+
+/* Déclaration des class pour les fonts*/
+.haettenschweiler-font {
+    font-family: var(--serif-font);
+}
+
+.dubai-bold-font {
+    font-family: var(--sans-font-1);
+}
+
+.dubai-light-font {
+    font-family: var(--sans-font-2);
+}
+
+.dubai-regular-font {
+    font-family: var(--sans-font-3);
+}
+
+.dubai-regular-font {
+    font-family: var(--sans-font-4);
+}
