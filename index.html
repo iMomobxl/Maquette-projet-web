@@ -33,9 +33,10 @@
                 <li><a class="nav-link link-secondary" href="#" target="_self">Session</a></li>
             </ul>
         </div>
-        <div class="col-lg-6 d-none d-lg-block align-self-center">
-            <form action="">
-                <input type="text">
+        <div class="col-lg-4 d-none d-lg-block align-self-center">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">Search</button>
             </form>
         </div>
         <div class="col-lg-2 d-none d-lg-block d-inline align-self-center">
@@ -50,13 +51,13 @@
                     alt="Image 3">
             </picture>
         </div>
-        <div class="col-3 col-lg-2 d-inline align-self-center">
+        <div class="col-3 col-lg-2 d-inline align-self-center flex-end">
             <picture>
                 <img class="img-fluid d-block mx-auto align-self-center" id="image-menu" src="media/image2-menu.png"
                     alt="Image 3">
             </picture>
         </div>
-        <div class="collapse navbar-collapse border-primary border border-2 text-black rounded" id="menu">
+        <div class="collapse overflow-visible navbar-collapse border-primary border border-2 text-black rounded m-3" id="menu">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html" target="_self">Acceuil</a>
@@ -75,18 +76,19 @@
         <article class="col-lg-9">
             <div class="container border-primary border-top border-5 me-lg-2">
                 <div class="row">
-                    <header>
-                        <h2 class="dubai-medium-font">Principal</h2>
+                    <header class="pt-2">
+                        <h2>Principal</h2>
                     </header>
                     <main class="col-md-7 pb-3">
-                        <a class="article rounded" href="#">
+                        <a class="article rounded" href="article.html" target="_self">
                             <picture>
-                                <img class="img-fluid rounded" src="https://placehold.co/600x300"
+                                <img class="img-fluid img-thumbnail" src="https://placehold.co/600x300"
                                     alt="Article Main Image">
                             </picture>
                             <header class="py-3">
-                                <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, nesciunt?</h1>
-                                <span>23:07 10/06/2024</span>
+                                <h1>Titre article principal: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Harum, nesciunt?</h1>
+                                <p>23:07 10/06/2024</p>
                             </header>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Laudantium fugiat magnam rerum
@@ -106,11 +108,15 @@
                         <section class="pb-3">
                             <a class="article rounded" href="#">
                                 <picture>
-                                    <img class="img_fluid rounded" src="https://placehold.co/300x150"
-                                        alt="Article Main Image">
+                                    <img class="img-fluid img-thumbnail" src="https://placehold.co/300x180"
+                                        alt="Article 2 Main Image">
                                 </picture>
-                                <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis inventore </h4>
-                                <p class="haettenschweiler-font">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                <header class="pt-3 pb-1">
+                                    <h2>Titre article secondaire: Lorem ipsum dolor, sit amet consectetur
+                                        adipisicing elit. Nobis inventore </h2>
+                                    <p>23:07 10/06/2024</p>
+                                </header>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                                     elit. Dignissimos eligendi ratione
                                     voluptatibus dolore similique cumque. Soluta perspiciatis nam autem excepturi
                                     corrupti
@@ -119,68 +125,93 @@
                         </section>
                         <section class="pb-3">
                             <a class="article rounded" href="#">
-                            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis inventore </h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit. Dignissimos eligendi ratione
-                                voluptatibus dolore similique cumque. Soluta perspiciatis nam autem excepturi
-                                corrupti
-                                fuga ad</p>
+                                <h2>Titre article n°3: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
+                                    inventore </h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit. Dignissimos eligendi ratione
+                                    voluptatibus dolore similique cumque. Soluta perspiciatis nam autem excepturi
+                                    corrupti
+                                    fuga ad</p>
                             </a>
                         </section>
                     </aside>
-                    <article class="col-md-6 col-lg-4">
-                        <picture>
-                            <img class="img-fluid" src="https://placehold.co/280x150" alt="">
-                        </picture>
-                        <p class="haettenschweiler-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Molestiae distinctio quibusdam
-                            cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
-                            consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                    <article class="col-md-6 col-lg-4 pb-3">
+                        <a class="article rounded">
+                            <picture>
+                                <img class="img-fluid img-thumbnail" src="https://placehold.co/300x180"
+                                    alt="Article 4 Main Image">
+                            </picture>
+                            <h3 class="pt-2">Titre article n°4</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Molestiae distinctio quibusdam
+                                cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
+                                consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                        </a>
                     </article>
-                    <article class="col-md-6 col-lg-4">
-                        <picture>
-                            <img class="img-fluid" src="https://placehold.co/280x150" alt="">
-                        </picture>
-                        <p class="haettenschweiler-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Molestiae distinctio quibusdam
-                            cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
-                            consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                    <article class="col-md-6 col-lg-4 pb-3">
+                        <a class="article rounded">
+                            <picture>
+                                <img class="img-fluid img-thumbnail" src="https://placehold.co/300x180"
+                                    alt="Article 5 Main Image">
+                            </picture>
+                            <h3 class="pt-2">Titre article n°5</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Molestiae distinctio quibusdam
+                                cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
+                                consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                        </a>
                     </article>
-                    <article class="col-md-6 col-lg-4">
-                        <picture>
-                            <img class="img-fluid" src="https://placehold.co/280x150" alt="">
-                        </picture>
-                        <p class="haettenschweiler-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Molestiae distinctio quibusdam
-                            cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
-                            consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                    <article class="col-md-6 col-lg-4 pb-3">
+                        <a class="article rounded">
+                            <picture>
+                                <img class="img-fluid img-thumbnail" src="https://placehold.co/300x180"
+                                    alt="Article 6 Main Image">
+                            </picture>
+                            <h3 class="pt-2">Titre article n°6</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Molestiae distinctio quibusdam
+                                cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
+                                consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                        </a>
                     </article>
-                    <article class="col-md-6 col-lg-4">
-                        <picture>
-                            <img class="img-fluid" src="https://placehold.co/280x150" alt="">
-                        </picture>
-                        <p class="haettenschweiler-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Molestiae distinctio quibusdam
-                            cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
-                            consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                    <article class="col-md-6 col-lg-4 pb-3">
+                        <a class="article rounded">
+                            <picture>
+                                <img class="img-fluid img-thumbnail" src="https://placehold.co/300x180"
+                                    alt="Article 7 Main Image">
+                            </picture>
+                            <h3 class="pt-2">Titre article n°7</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Molestiae distinctio quibusdam
+                                cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
+                                consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                        </a>
                     </article>
-                    <article class="col-md-6 col-lg-4">
-                        <picture>
-                            <img class="img-fluid" src="https://placehold.co/280x150" alt="">
-                        </picture>
-                        <p class="haettenschweiler-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Molestiae distinctio quibusdam
-                            cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
-                            consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                    <article class="col-md-6 col-lg-4 pb-3">
+                        <a class="article rounded">
+                            <picture>
+                                <img class="img-fluid rounded" src="https://placehold.co/300x180"
+                                    alt="Article 8 Main Image">
+                            </picture>
+                            <h3 class="pt-2">Titre article n°8</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Molestiae distinctio quibusdam
+                                cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
+                                consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                        </a>
                     </article>
-                    <article class="col-md-6 col-lg-4">
-                        <picture>
-                            <img class="img-fluid" src="https://placehold.co/280x150" alt="">
-                        </picture>
-                        <p class="haettenschweiler-font">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Molestiae distinctio quibusdam
-                            cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
-                            consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                    <article class="col-md-6 col-lg-4 pb-3">
+                        <a class="article rounded">
+                            <picture>
+                                <img class="img-fluid img-thumbnail" src="https://placehold.co/300x180"
+                                    alt="Article 9 Main Image">
+                            </picture>
+                            <h3 class="pt-2">Titre article n°9</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Molestiae distinctio quibusdam
+                                cupiditate at eaque! Perferendis animi harum temporibus beatae cupiditate tenetur
+                                consequuntur quod quas, aspernatur quia qui autem, quos fuga!</p>
+                        </a>
                     </article>
                 </div>
             </div>
@@ -188,63 +219,89 @@
         <aside class="col-lg-3">
             <div class="container border-primary border-top border-5 ms-2">
                 <div class="row">
-                    <h2>Opinion</h2>
-                    <section>
-                        <h4 class="text-danger">Bajo Reservatext</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <header class="pt-2">
+                        <h2>Opinion</h2>
+                    </header>
+                    <section class="container py-3">
+                        <main class="row border-secondary border-bottom border-1 mx-1">
+                            <div class="col-9 ">
+                                <h4 class="text-danger">Bajo Reservatext</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                            <picture class="col-3">
+                                <img class="img-opinion" src="https://placehold.co/60x60" alt="Image Profile 1">
+                            </picture>
+                        </main>
                     </section>
-                    <section>
-                        <h4 class="text-danger">Hector De Mauleon</h4>
-                        <p>Voluptatem deleniti minima vel aliquam mollitia alias</p>
+                    <section class="container py-3">
+                        <main class="row border-secondary border-bottom border-1 mx-1">
+                            <div class="col-9">
+                                <h4 class="text-danger">Hector De Mauleon</h4>
+                                <p>Voluptatem deleniti minima vel aliquam mollitia alias</p>
+                            </div>
+                            <picture class="col-3">
+                                <img class="img-opinion" src="https://placehold.co/60x60" alt="Image Profile 1">
+                            </picture>
+                        </main>
                     </section>
-                    <section>
-                        <h4 class="text-danger">Salvador Garcia Soto</h4>
-                        <p>Illum eveniet cum molestias tempore labore neque eius</p>
+                    <section class="container py-3">
+                        <main class="row border-secondary border-bottom border-1 mx-1">
+                            <div class="col-9">
+                                <h4 class="text-danger">Salvador Garcia Soto</h4>
+                                <p>Illum eveniet cum molestias tempore labore neque eius</p>
+                            </div>
+                            <picture class="col-3">
+                                <img class="img-opinion" src="https://placehold.co/60x60" alt="Image Profile 1">
+                            </picture>
+                        </main>
                     </section>
-                    <section>
-                        <h4 class="text-danger">Carlos Loret de Mola</h4>
-                        <p>Labore neque eius architecto dicta fugit eaque laudantium quos. </p>
+                    <section class="container py-3">
+                        <main class="row border-secondary border-bottom border-1 mx-1">
+                            <div class="col-9">
+                                <h4 class="text-danger">Carlos Loret de Mola</h4>
+                                <p>Labore neque eius architecto dicta fugit eaque laudantium quos. </p>
+                            </div>
+                            <picture class="col-3">
+                                <img class="img-opinion" src="https://placehold.co/60x60" alt="Image Profile 1">
+                            </picture>
+                        </main>
                     </section>
-                    <section>
-                        <h4 class="text-danger">Mario Maldonado</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <section class="container py-3">
+                        <main class="row border-secondary border-bottom border-1 mx-1">
+                            <div class="col-9">
+                                <h4 class="text-danger">Mario Maldonado</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                            </div>
+                            <picture class="col-3">
+                                <img class="img-opinion" src="https://placehold.co/60x60" alt="Image Profile 1">
+                            </picture>
+                        </main>
                     </section>
-                </div>
-            </div>
-        </aside>
-        <article class="col-lg-12">
-            <div class="container">
-                <div class="row">
 
                 </div>
             </div>
-        </article>
+        </aside>
     </main>
-    <br>
-    <footer class="row">
-        <main class="bg-primary text-light">
-            <ul class="nav">
-                <li><a class="nav-link" href="#" target="_self">Directorio</a></li>
-                <li><a class="nav-link" href="#" target="_self">Consejo Editorial Consultivo</a></li>
-                <li><a class="nav-link" href="#" target="_self">Código de ética</a></li>
-                <li><a class="nav-link" href="#" target="_self">Violencia</a></li>
-                <li><a class="nav-link" href="#" target="_self">Violencia</a></li>
-                <li><a class="nav-link" href="#" target="_self">Servicios</a></li>
-                <li><a class="nav-link" href="#" target="_self">Aviso de Privacidad</a></li>
-                <li><a class="nav-link" href="#" target="_self">Historia</a></li>
-                <li><a class="nav-link" href="#" target="_self">Declaración de Accesibilidad</a></li>
-                <li><a class="nav-link" href="#" target="_self">Términos y condiciones</a></li>
-                <li><a class="nav-link" href="#" target="_self">Contacto</a></li>
+    <footer class="row py-5">
+        <main class="container rounded" id="footer-main">
+            <ul class="nav justify-content-center">
+                <li><a class="nav-link link-light" href="#" target="_self">Annuaire</a></li>
+                <li><a class="nav-link link-light" href="#" target="_self">Comité de rédaction</a></li>
+                <li><a class="nav-link link-light" href="#" target="_self">Code d'éthique</a></li>
+                <li><a class="nav-link link-light" href="#" target="_self">Violence</a></li>
+                <li><a class="nav-link link-light" href="#" target="_self">Service</a></li>
+                <li><a class="nav-link link-light" href="#" target="_self">Avis de confidentialité</a></li>
+                <li><a class="nav-link link-light" href="#" target="_self">Histoire</a></li>
+                <li><a class="nav-link link-light" href="#" target="_self">Déclaration d'accessibilité</a></li>
+                <li><a class="nav-link link-light" href="#" target="_self">Termes et conditions</a></li>
+                <li><a class="nav-link link-light" href="#" target="_self">Contact</a></li>
             </ul>
-            <span>Copyright © Todos los derechos reservados | EL UNIVERSAL, Compañía Periodística Nacional. De no
-                existir
-                previa autorización, queda expresamente prohibida la Publicación, retransmisión, edición y cualquier
-                otro uso de los contenidos</span>
+            <p class="text-center text-light pt-4">Copyright © Tous droits réservés | EL UNIVERSAL, Société Nationale de
+                Journalisme. Sans autorisation préalable, la publication, la retransmission, l'édition et toute autre
+                utilisation du contenu sont expressément interdites. (SAUF pour 4IPBW)</p>
         </main>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
 </body>
-
-</html>

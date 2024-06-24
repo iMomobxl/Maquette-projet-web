@@ -48,9 +48,9 @@ sansfont : Dubai
     --color: cyan;
     --serif-font: "Haettenschweiler", sans-serif;
     --sans-font-1: "Dubai-Bold", sans-serif;
-    --sans-font-2: "Dubai-Light", sans-serif;
-    --sans-font-3: "Dubai-Medium", sans-serif;
-    --sans-font-4: "Dubai-Regular", sans-serif;
+    --sans-font-2: "Dubai-Medium", sans-serif;
+    --sans-font-3: "Dubai-Regular", sans-serif;
+    --sans-font-4: "Dubai-Light", sans-serif;
 }
 
 
@@ -63,15 +63,15 @@ sansfont : Dubai
     font-family: var(--sans-font-1);
 }
 
-.dubai-light-font {
+.dubai-medium-font {
     font-family: var(--sans-font-2);
 }
 
-.dubai-medium-font {
+.dubai-regular-font {
     font-family: var(--sans-font-3);
 }
 
-.dubai-regular-font {
+.dubai-light-font {
     font-family: var(--sans-font-4);
 }
 
@@ -84,11 +84,17 @@ sansfont : Dubai
     min-height:30px;
 }
 
+/* Garde la couleur du footer originel du site, qui est plus "estétique" que la couleur imposé pour un footer */
+#footer-main {
+    background-color: #024e7a;
+}
+
 /* retire la border du burger menu de bootstrap */
 .navbar-toggler {
     border: none;
 }
 
+/* remplace le primary-border de bootstrap par la couleur imposé */
 .border-primary {
     border-color: var(--color) !important;
 }
@@ -101,10 +107,16 @@ sansfont : Dubai
     transition: border-color 0.5s linear;
 }
 
+.img-opinion {
+    border-radius: 100%;
+}
+
+/* attibue la couleur imposé au bord de chaque article */
 .article:hover {
     border-color: var(--color);
 }
 
+/* Attribution des font aux class p, h1, h2, h3, h4 */
 p {
     font-family: var(--serif-font);
     line-height: 22px;
