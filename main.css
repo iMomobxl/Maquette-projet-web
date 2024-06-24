@@ -46,11 +46,11 @@ sansfont : Dubai
 /* Déclaration variable global */
 :root {
     --color: cyan;
-    --serif-font: "Haettenschweiler";
-    --sans-font-1: "Dubai-Bold";
-    --sans-font-2: "Dubai-Light";
-    --sans-font-3: "Dubai-Medium";
-    --sans-font-4: "Dubai-Regular";
+    --serif-font: "Haettenschweiler", sans-serif;
+    --sans-font-1: "Dubai-Bold", sans-serif;
+    --sans-font-2: "Dubai-Light", sans-serif;
+    --sans-font-3: "Dubai-Medium", sans-serif;
+    --sans-font-4: "Dubai-Regular", sans-serif;
 }
 
 
@@ -67,7 +67,7 @@ sansfont : Dubai
     font-family: var(--sans-font-2);
 }
 
-.dubai-regular-font {
+.dubai-medium-font {
     font-family: var(--sans-font-3);
 }
 
@@ -87,4 +87,41 @@ sansfont : Dubai
 /* retire la border du burger menu de bootstrap */
 .navbar-toggler {
     border: none;
+}
+
+.border-primary {
+    border-color: var(--color) !important;
+}
+
+.article {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 2px solid transparent;
+    transition: border-color 0.5s linear;
+}
+
+.article:hover {
+    border-color: var(--color);
+}
+
+p {
+    font-family: var(--serif-font);
+    line-height: 22px;
+}
+
+h1 {
+    font-family: var(--sans-font-1)
+}
+
+h2 {
+    font-family: var(--sans-font-2)
+}
+
+h3 {
+    font-family: var(--sans-font-3)
+}
+
+h4 {
+    font-family: var(--sans-font-4);
 }
