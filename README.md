@@ -1,3 +1,4 @@
 # 4IPWB
 
-# "external.css": fichier css Bootstrap utilisé pour le header/footer
+# "external.css": fichier css Bootstrap
+# lib/fonts/: font imposé pour le projet
