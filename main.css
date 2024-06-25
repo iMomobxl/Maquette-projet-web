@@ -80,6 +80,10 @@ sansfont : Dubai
     min-height:30px;
 }
 
+#logo-menu {
+
+}
+
 /* Garde la couleur du footer originel du site, qui est plus "estétique" que la couleur imposé pour un footer */
 #footer-main {
     background-color: #024e7a;
