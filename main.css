@@ -7,8 +7,8 @@ sansfont : Dubai
 
 /* Importation des fonts (local) */
 @font-face {
-    font-family: "Haettenschweilerr";
-    src: url('lib/fonts/Haettenschweilerttf');
+    font-family: "Haettenschweiler";
+    src: url('lib/fonts/Haettenschweiler.ttf');
     font-weight: normal;
     font-style: normal;
 }
