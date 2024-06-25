@@ -134,6 +134,8 @@ sansfont : Dubai
 p {
     font-family: var(--serif-font);
     line-height: 30px;
+    letter-spacing: 0.5px;
+    word-spacing:1px;
 }
 
 h1 {
