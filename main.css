@@ -125,6 +125,7 @@ sansfont : Dubai
     transition: border-color 0.5s linear;
 }
 
+/* aside opinion image*/
 .img-opinion {
     border-radius: 100%;
 }
@@ -139,20 +140,19 @@ p {
     font-family: var(--serif-font);
     line-height: 30px;
     letter-spacing: 0.5px;
-    word-spacing:1px;
+    word-spacing: 1px;
 }
 
 h1 {
-    font-family: var(--sans-font-1)
+    font-family: var(--sans-font-1);
 }
 
 h2 {
-    font-family: var(--sans-font-2)
-    
+    font-family: var(--sans-font-2); 
 }
 
 h3 {
-    font-family: var(--sans-font-3)
+    font-family: var(--sans-font-3);
 }
 
 h4 {
