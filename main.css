@@ -143,6 +143,11 @@ p {
     word-spacing: 1px;
 }
 
+.p-article {
+    text-indent: 50px;
+    font-size: large;
+}
+
 h1 {
     font-family: var(--sans-font-1);
 }

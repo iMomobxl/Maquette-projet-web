@@ -8,10 +8,11 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="lib/external.css">
     <link rel="stylesheet" href="main.css">
-    <title>4IPWB Projet - El Universal</title>
+    <title>4IPWB Projet - El Universal - Recherche</title>
 </head>
 
 <body class="container ">
+    <!-- HEADER -->
     <header class="row border-bottom p-lg-3 sticky-top bg-white">
         <nav class="col-2 col-md-1 order-sm-first navbar">
             <div class="container">
@@ -71,33 +72,38 @@
             </ul>
         </nav>
     </header>
+    <!-- MAIN -->
     <main class="d-flex justify-content-center row pt-3">
         <header class="col-8 border-primary border-top border-5">
                 <h2 class="text-center pb-4 pt-2 text-danger">Page de recherche</h2>
         </header>
         <form class="col-8 m-3" method="post">
+            <!-- MOT CLES TITRE-->
             <div class="row py-2">
-                <label class="col-md-5 col-form-label text-sm-center text-md-end">Mot clé dans le titre et/ou le résumé:</label>
+                <label for="mot_titre" class="col-md-5 col-form-label text-sm-center text-md-end">Mot clé dans le titre et/ou le résumé:</label>
                 <div class="col-md-7">
-                    <input type="text" class="form-control" placeholder="-">
+                    <input type="text" id="mot_titre" name="mot_titre" class="form-control" placeholder="-">
                 </div>
             </div>
+            <!-- MOT CLES CORPS -->
             <div class="row py-2">
-                <label class="col-md-5 col-form-label text-sm-center text-md-end">Mot clés dans le corps du texte:</label>
+                <label for="mot_corps" class="col-md-5 col-form-label text-sm-center text-md-end">Mot clés dans le corps du texte:</label>
                 <div class="col-md-7">
-                    <input type="text" class="form-control" placeholder="-">
+                    <input type="text" id="mot_corps" name="mot_corps" class="form-control" placeholder="-">
                 </div>
             </div>
+            <!-- DATE -->
             <div class="row py-2">
-                <label class="col-md-5 col-form-label text-sm-center text-md-end">Date:</label>
+                <label for="date" class="col-md-5 col-form-label text-sm-center text-md-end">Date:</label>
                 <div class="col-md-7">
-                    <input type="date" class="form-control">
+                    <input type="date" id="date" name="date" class="form-control">
                 </div>
             </div>
+            <!-- CATEGORIE -->
             <div class="row py-2">
-                <label class="col-md-5 col-form-label text-sm-center text-md-end">Catégorie:</label>
+                <label for="categorie" class="col-md-5 col-form-label text-sm-center text-md-end">Catégorie:</label>
                 <div class="col-md-7">
-                    <select class="form-select">
+                    <select class="form-select" id="categorie" name="categorie">
                         <option value="0" selected>International</option>
                         <option value="1">National</option>
                         <option value="2">Région</option>
@@ -110,17 +116,18 @@
                     </select>
                 </div>
             </div>
+            <!-- NOMBRE d'article par page -->
             <div class="row py-2">
-                <label class="col-md-5 col-form-label text-sm-center text-md-end">Hashtag (séparés par des
-                    virgules):</label>
+                <label for="nbr_article" class="col-md-5 col-form-label text-sm-center text-md-end">Nombre d'article à afficher:</label>
                 <div class="col-md-7">
-                    <input type="text" class="form-control">
+                    <input type="number" id="nbr_article" name="nbr_article" min="10" max="100" step="10" class="form-control" value="10">
                 </div>
             </div>
+            <!-- TRIE-->
             <div class="row py-2">
-                <label class="col-md-5 col-form-label text-sm-center text-md-end">Trier par:</label>
+                <label for="trie_article" class="col-md-5 col-form-label text-sm-center text-md-end">Trier par:</label>
                 <div class="col-md-7">
-                    <select class="form-select">
+                    <select class="form-select" id="trie_article" name="trie_article">
                         <option value="0" selected>Date (plus ancien en premier)</option>
                         <option value="1">Date (plus récent en premier)</option>
                     </select>
@@ -131,6 +138,7 @@
             </div>
         </form>
     </main>
+    <!-- FOOTER -->
     <footer class="row py-5">
         <nav class="container rounded" id="footer-main">
             <ul class="nav justify-content-center dubai-regular-font">
@@ -145,12 +153,15 @@
                 <li><a class="nav-link link-light" href="#" target="_self">Termes et conditions</a></li>
                 <li><a class="nav-link link-light" href="#" target="_self">Contact</a></li>
             </ul>
-            <p class="text-center text-light pt-4 dubai-regular-font">Copyright © Tous droits réservés | EL UNIVERSAL, Société Nationale de
+            <p class="text-center text-light pt-4 dubai-regular-font">Copyright © Tous droits réservés | EL UNIVERSAL,
+                Société Nationale de
                 Journalisme. Sans autorisation préalable, la publication, la retransmission, l'édition et toute autre
-                utilisation du contenu sont expressément interdites. <br><span class="text-warning">(SAUF pour 4IWPB)</span>
+                utilisation du contenu sont expressément interdites. <br><span class="text-warning">(SAUF pour
+                    4IWPB)</span>
             </p>
         </nav>
     </footer>
+    <!-- SCRIPT BOOTSTRAP BURGER MENU -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
