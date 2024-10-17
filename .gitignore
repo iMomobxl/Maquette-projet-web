@@ -1,3 +1,11 @@
+# Ignore Mac System files
+.DS_STORE
+
+# ignore pdf
 *.pdf
+
+# ignore excel sheet
 *.xlsx
+
+#ignore zip file
 *.zip
